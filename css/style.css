@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+  
+    position: relative;
+}
+
+.conteiner img {
+    width: 150px;
+    animation: myImg 2s infinite;
+    margin: 50px;
+    text-align: right;
+    
+   
+}
+
+@keyframes myImg {
+    from {
+        transform: translateX(0%);opacity: 5%;
+    }
+    to {
+        transform: translateX(100%);opacity: 1;;
+    }
+}
+
+.icone :hover{
+   
+    transform: skew(20deg); 
+    animation: shake 2s infinite;
+    animation-direction: alternate;
+}
+@keyframes shake{
+    0%{
+        transform: skewY(20deg);
+    }
+    100%{
+        transform: skewY(-20deg);
+    }
+}
+
+button{
+    height: 50px;
+    width: 80px;  
+    margin-top: 50px;
+    background: #B9DFFF;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+    background-color: royalblue;
+    transition: background-color 2s  ease-in-out,transform 2s;
+    
+}
+button:hover{
+    background-color: rgb(168, 185, 238);
+    transform: rotate(180deg);
+   
+   
+}
+
